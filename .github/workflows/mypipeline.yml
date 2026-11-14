@@ -10,9 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run ls
-        run:
+        run: |
           ls
           hostname
-          
+          cat /etc/os-release
+
 
    
