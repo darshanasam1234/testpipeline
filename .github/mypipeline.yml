@@ -1,0 +1,19 @@
+name: mypipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  firstjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run ls
+        run:
+          ls 
+          hostname
+            
+
+
+   
