@@ -14,6 +14,15 @@ jobs:
           ls
           hostname
           cat /etc/os-release
+  secondjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run ls
+        run: |
+          ls
+          hostname
+          cat /et
+          ${{ github.event.head_commit.message }}
 
 
    
